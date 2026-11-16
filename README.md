@@ -41,6 +41,7 @@ Full tables, including every sweep with Monte Carlo standard errors: [results/su
 - Binary success per attempt; graded scores need a different model.
 - One effect size and one baseline rate per setting; real improvements vary by task.
 - Hazard strengths are illustrative; the study shows the mechanism and its scale, not how strong a hazard is in any particular evaluation.
+- Integrity note: the simulation model itself (`sim/model.py`, `sim/hazards.py`), the configuration and the model tests still match their frozen hashes. `PLAN.md`, `sim/analyze.py`, `sim/js_check.mjs` and `tests/test_js_agreement.py` no longer do, and those later changes are not in the amendment log; the frozen versions were not kept. The current code regenerates the published results exactly.
 - The JavaScript copy of the model (`sim/hazard_sim.js`) must agree with the Python model within Monte Carlo error on three documented settings (`tests/test_js_agreement.py`). The freeze manifest also lists the study's original interactive page (`docs/`); that page has since become the Agent Eval Planner and lives in the tool's repository, so those hashes no longer apply here.
 
 ## Reproduce
