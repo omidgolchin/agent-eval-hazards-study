@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this study, please cite it as below."
+title: "How design hazards fake wins in LLM-agent experiments: a simulation study"
+abstract: "A Monte Carlo study of how eight design hazards in LLM-agent experiments bias estimated effects and inflate false-positive rates, each paired with the check that catches it. All data are simulated."
+authors:
+  - family-names: "Golchin"
+    given-names: "Omid"
+type: software
+license: MIT
+repository-code: "https://github.com/omidgolchin/agent-eval-hazards-study"
+keywords:
+  - llm-agents
+  - experimental-design
+  - false-positive-rate
+  - simulation
+  - evaluation-methodology
